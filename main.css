@@ -33,6 +33,8 @@
     color: 	black;
     text-align: right;
     flex: 1 1 0%;
+    border: 10px solid bisque;
+    border-radius: 1.5rem 1.5rem 0rem 0rem;
 }
 
 .display .input {
@@ -60,12 +62,12 @@
 .keys{
     background-color: bisque;
     padding: 1.5rem;
-    border-radius: 1.5rem 1.5rem 0 0;
+    /* border-radius: 1.5rem 1.5rem 0 0; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-gap: 1rem;
-    box-shadow: 0px -2px 16px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0px -2px 16px rgba(0, 0, 0, 0.2); */
 }
 
 .keys .key {

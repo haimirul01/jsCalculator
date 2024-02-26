@@ -19,6 +19,9 @@ for (let key of keys) {
         } else if (value == "=") {
             let result = eval(PrepareInput(input));
 
+            // result = Math.round((result + Number.EPSILON) * 100) / 100
+            result = +result.toFixed(9)
+
             display_output.innerHTML = CleanOutput(result);
         } else if (value == "brackets") {
             if (input.indexOf("(") == -1 || input.indexOf("(") != -1 && 
